@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trust the Fear to Fall — Late Night Thoughts</title>
+  <link rel="stylesheet" href="mystyle.css" />
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="poem-page">
+
+  <!-- Top Minimal Header -->
+  <header class="header container">
+    <a href="index.html" class="brand-name">Late Night Thoughts</a>
+    <nav class="nav-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="archive.html" class="btn btn-pill">Archive</a>
+    </nav>
+  </header>
+
+  <!-- Sepia / Warm Toned Banner -->
+  <section class="poem-hero sepia-hero">
+    <div class="hero-overlay"></div>
+    <div class="poem-hero-content">
+      <span class="category-tag">LATE NIGHT THOUGHTS</span>
+      <h1 class="poem-main-title">Trust the Fear<br>to Fall</h1>
+      <p class="poem-summary">
+        A quiet reflection on confronting the uncertainty of letting go, finding peace within vulnerability, and discovering that surrender is where real strength begins.
+      </p>
+    </div>
+  </section>
+
+  <!-- Centered Poem Body -->
+  <main class="poem-content-area">
+    <article class="poem-wrapper">
+      
+      <!-- Stanza 1 -->
+      <div class="stanza">
+        <p>There is a ledge inside the night,</p>
+        <p>Where every breath grows thin.</p>
+        <p>And all the voices soften down,</p>
+        <p>To the quiet held within.</p>
+      </div>
+
+      <!-- Subtle Blue Divider Line -->
+      <hr class="poem-divider poem-divider-blue" />
+
+      <!-- Stanza 2 -->
+      <div class="stanza">
+        <p>You count the reasons not to leap,</p>
+        <p>The bruises you might keep.</p>
+        <p>The way the ground has never asked,</p>
+        <p>How far the drop, how deep.</p>
+      </div>
+
+      <!-- Stanza 3 -->
+      <div class="stanza">
+        <p>But fear is not the enemy,</p>
+        <p>It is the pulse of care.</p>
+        <p>The proof that something matters still,</p>
+        <p>Enough to hold you there.</p>
+      </div>
+
+      <!-- Stanza 4 -->
+      <div class="stanza">
+        <p>So trust the fear to teach your feet,</p>
+        <p>The shape of letting go.</p>
+        <p>To open, weightless, into dark,</p>
+        <p>And find you learned to grow.</p>
+      </div>
+
+      <!-- Stanza 5 -->
+      <div class="stanza">
+        <p>For falling was the only way,</p>
+        <p>The sky could hold you tall.</p>
+        <p>And what you feared would break you first,</p>
+        <p>Was only teaching you to fall.</p>
+      </div>
+
+      <!-- Poem Signoff / Attribution -->
+      <div class="poem-signoff">
+        WRITTEN IN THE DARK — R.
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Editorial Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Return Home -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-title serif-heading">Late Night Thoughts</span>
+          <p class="footer-quote"><em>“Words kept close, left softly by the window.”</em></p>
+        </div>
+
+        <a href="index.html" class="return-link" aria-label="Return home">
+          <span class="arrow-left">&larr;</span>
+          <span>Return home</span>
+        </a>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Row: Navigation Links & Copyright -->
+      <div class="footer-bottom">
+        <nav class="footer-nav">
+          <a href="index.html#poems">Archive</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#letters">Letters</a>
+          <a href="index.html#contact">Quiet notes</a>
+        </nav>
+
+        <div class="footer-meta">
+          <span>&copy; <span id="year"></span> Late Night Thoughts. All rights reserved.</span>
+          <span class="meta-separator">&bull;</span>
+          <span>Set in Cormorant Garamond &amp; Inter</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>

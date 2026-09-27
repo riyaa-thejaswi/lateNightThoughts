@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Do we ever — Late Night Thoughts</title>
+  <link rel="stylesheet" href="mystyle.css" />
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Minimal Header (White Background) -->
+  <header class="poem-header container">
+    <a href="index.html" class="brand-name">Late Night Thoughts</a>
+    <nav class="nav-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="archive.html" class="btn btn-pill">Archive
+
+      </a>
+    </nav>
+  </header>
+
+  <!-- Night Sky Galaxy Hero Banner -->
+  <section class="galaxy-hero">
+    <div class="hero-overlay"></div>
+    <div class="galaxy-hero-content">
+      <span class="category-tag">LATE NIGHT THOUGHTS</span>
+      <h1 class="poem-main-title">Do we ever</h1>
+      <p class="poem-summary">
+        A deeply personal reflection on my own late night rambles, exploring the quiet ache of wondering if the soul you're longing for is out there looking for you, too.
+      </p>
+    </div>
+  </section>
+
+  <!-- Centered Poem Body -->
+  <main class="poem-content-area">
+    <article class="poem-wrapper">
+      
+      <!-- Stanza 1 -->
+      <div class="stanza">
+        <p>Do you ever want to be,</p>
+        <p>The apple in one's eye.</p>
+        <p>Their light at the end of the tunnel,</p>
+        <p>Their cloud's silver lining.</p>
+      </div>
+
+      <!-- Subtle Divider Line -->
+      <hr class="poem-divider" />
+
+      <!-- Stanza 2 -->
+      <div class="stanza">
+        <p>Do you ever wish for love,</p>
+        <p>A love that conquers all,</p>
+        <p>A story for the ages,</p>
+        <p>Where the 'happy' is forever.</p>
+      </div>
+
+      <!-- Stanza 3 -->
+      <div class="stanza">
+        <p>Do you ever crave a gaze,</p>
+        <p>That anchors you in place?</p>
+        <p>A quiet hand to hold your hand,</p>
+        <p>Time cannot erase.</p>
+      </div>
+
+      <!-- Stanza 4 -->
+      <div class="stanza">
+        <p>Do you ever close your eyes and hope,</p>
+        <p>That someone else feels the same,</p>
+        <p>To wonder if they look to the stars,</p>
+        <p>And whisper your unknown name.</p>
+      </div>
+
+      <!-- Stanza 5 -->
+      <div class="stanza">
+        <p>Do they ever wish to find,</p>
+        <p>In a world so vast and wide,</p>
+        <p>A love to guide them through the dark,</p>
+        <p>And glow from deep inside?</p>
+      </div>
+      <div class="poem-signoff">
+        WRITTEN IN THE DARK — R.
+      </div>
+    </article>
+    
+  </main>
+
+ <!-- Editorial Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Return to Poems -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-title serif-heading">Late Night Thoughts</span>
+          <p class="footer-quote"><em>“Words kept close, left softly by the window.”</em></p>
+        </div>
+
+        <a href="index.html#poems" class="return-link" aria-label="Return to poems">
+          <span class="arrow-left">&larr;</span>
+          <span>Return to poems</span>
+        </a>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Row: Navigation Links & Copyright -->
+      <div class="footer-bottom">
+        <nav class="footer-nav">
+          <a href="index.html#poems">Archive</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#letters">Letters</a>
+          <a href="index.html#contact">Quiet notes</a>
+        </nav>
+
+        <div class="footer-meta">
+          <span>&copy; <span id="year"></span> Late Night Thoughts. All rights reserved.</span>
+          <span class="meta-separator">&bull;</span>
+          <span>Set in Cormorant Garamond &amp; Inter</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Single Footer Script -->
+  <script>
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Late Night Thoughts</title>
+  <link rel="stylesheet" href="mystyle.css" />
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="about-page">
+
+  <!-- Top Minimal Header -->
+  <header class="header container">
+    <a href="index.html" class="brand-name">Late Night Thoughts</a>
+    <nav class="nav-links">
+      <a href="about.html" class="nav-link active-link">About</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+      <a href="index.html#poems" class="btn btn-pill">Archive</a>
+    </nav>
+  </header>
+
+  <!-- Editorial Page Title Banner -->
+  <section class="about-hero">
+    <div class="container-center">
+      <span class="category-tag">NOTE FROM THE AUTHOR</span>
+      <h1 class="serif-heading about-main-title">Between the Lines</h1>
+      <p class="about-lead">
+        A small collection of reasons for putting pen to paper when the world has gone quiet.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Editorial Content -->
+  <main class="about-content container">
+    
+    <!-- Section 1: Introduction with Portrait / Desk Vignette -->
+    <div class="about-grid-row">
+      <div class="about-grid-text">
+        <h2 class="serif-heading row-heading">Why I write</h2>
+        <p>
+          <em>Late Night Thoughts</em> started as a quiet notebook on my nightstand. It was never meant to be grand or fully polished—just a sanctuary for fragments of memory, soft questions, and truths that felt too delicate to say out loud during the rush of daytime.
+        </p>
+        <p>
+          Writing in the dark has a peculiar kind of honesty. When everyone else is asleep, the filters soften, and you can finally hear whatever has been quietly waiting in the corners of your mind.
+        </p>
+      </div>
+
+      <div class="about-grid-media">
+        <div class="image-wrapper">
+          <img 
+            src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1000&auto=format&fit=crop" 
+            alt="Muted daylight falling across a quiet workspace with paper and fountain pen"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Center Divider Line -->
+    <hr class="section-rule" />
+
+    <!-- Section 2: Themes & Intent -->
+    <div class="about-grid-row reverse-row">
+      <div class="about-grid-media">
+        <div class="image-wrapper">
+          <img 
+            src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=1000&auto=format&fit=crop" 
+            alt="Soft mist through trees at sunrise"
+          />
+        </div>
+      </div>
+
+      <div class="about-grid-text">
+        <h2 class="serif-heading row-heading">On solitude & warmth</h2>
+        <p>
+          I am drawn to quiet things: rain tapping against windowpanes, old piano keys, cold tea left forgotten while reading, and the unspoken weight of everyday longing.
+        </p>
+        <p>
+          If you have arrived here feeling a little tired, or looking for a mirror to your own quiet thoughts, I hope these stanzas feel like a calm hand to hold. You are always welcome to linger as long as you need.
+        </p>
+
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Editorial Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Return Home -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-title serif-heading">Late Night Thoughts</span>
+          <p class="footer-quote"><em>“Words kept close, left softly by the window.”</em></p>
+        </div>
+
+        <a href="index.html" class="return-link" aria-label="Return home">
+          <span class="arrow-left">&larr;</span>
+          <span>Return home</span>
+        </a>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Row: Navigation Links & Copyright -->
+      <div class="footer-bottom">
+        <nav class="footer-nav">
+          <a href="index.html#poems">Archive</a>
+          <a href="about.html">About</a>
+          <a href="index.html#letters">Letters</a>
+          <a href="index.html#contact">Quiet notes</a>
+        </nav>
+
+        <div class="footer-meta">
+          <span>&copy; <span id="year"></span> Late Night Thoughts. All rights reserved.</span>
+          <span class="meta-separator">&bull;</span>
+          <span>Set in Cormorant Garamond &amp; Inter</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>

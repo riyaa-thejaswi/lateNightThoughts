@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archive — Late Night Thoughts</title>
+  <link rel="stylesheet" href="mystyle.css" />
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="archive-page">
+
+  <!-- Top Minimal Header -->
+  <header class="header container">
+    <a href="index.html" class="brand-name">Late Night Thoughts</a>
+    <nav class="nav-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="archive.html" class="btn btn-pill">Archive</a>
+    </nav>
+  </header>
+
+  <!-- Poems-Style Archive Section -->
+  <main class="poems-section" style="padding-top: 5rem; padding-bottom: 8rem;">
+    <div class="container-narrow">
+      <h1 class="serif-heading section-title">Archive</h1>
+
+      <!-- 2-Column Grid Matching the Index Page -->
+      <div class="poems-grid">
+        <!-- Left Column -->
+        <div class="poem-column">
+          <div class="poem-item">
+            <a href="doWeEver.html" class="poem-title">Do we ever?</a>
+            <span class="poem-date">July 14, 2026</span>
+          </div>
+
+                    <div class="poem-item">
+            <a href="trustTheFearToFall.html" class="poem-title">Trust the Fear to Fall</a>
+            <span class="poem-date">July 30, 2026</span>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="poem-column">
+          <div class="poem-item">
+            <a href="Heart4Heart.html" class="poem-title">A heart for a heart - but you took two
+</a>
+            <span class="poem-date">August 22, 2026</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Editorial Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Return Home -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-title serif-heading">Late Night Thoughts</span>
+          <p class="footer-quote"><em>“Words kept close, left softly by the window.”</em></p>
+        </div>
+
+        <a href="index.html" class="return-link" aria-label="Return home">
+          <span class="arrow-left">&larr;</span>
+          <span>Return home</span>
+        </a>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Row: Navigation Links & Copyright -->
+      <div class="footer-bottom">
+        <nav class="footer-nav">
+          <a href="archive.html">Archive</a>
+          <a href="about.html">About</a>
+          <a href="index.html#letters">Letters</a>
+          <a href="contact.html">Quiet notes</a>
+        </nav>
+
+        <div class="footer-meta">
+          <span>&copy; <span id="year"></span> Late Night Thoughts. All rights reserved.</span>
+          <span class="meta-separator">&bull;</span>
+          <span>Set in Cormorant Garamond &amp; Inter</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>

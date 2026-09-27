@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Late Night Thoughts</title>
+  <link rel="stylesheet" href="mystyle.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Blue Section: Header & Hero -->
+  <div class="sky-section">
+    <header class="header container">
+  <!-- Left Side -->
+  <a href="#" class="brand-name">Late Night Thoughts</a>
+
+  <!-- Right Side -->
+  <nav class="nav-links">
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="archive.html" class="btn btn-pill">Archive</a>
+  </nav>
+</header>
+
+<main class="hero container">
+      <div class="hero-text">
+        <h1 class="serif-heading">Do we ever?</h1>
+        <a href="doWeEver.html" class="btn btn-pill">Begin reading</a>
+      </div>
+<div class="hero-media">
+        <div class="image-wrapper carousel-container">
+          <!-- Slide 1 (active by default) -->
+          <img 
+            class="slide active"
+            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=1000&auto=format&fit=crop" 
+            alt="Cat basking in the morning sun" 
+          />
+          <!-- Slide 2 -->
+          <img 
+            class="slide"
+            src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?q=80&w=1000&auto=format&fit=crop" 
+            alt="Gentle cat resting in warm light" 
+          />
+
+          <!-- Previous and Next Navigation Arrows -->
+          <button class="slider-btn prev-btn" aria-label="Previous image">&#10094;</button>
+          <button class="slider-btn next-btn" aria-label="Next image">&#10095;</button>
+        </div>
+
+        <!-- Dot Indicators -->
+        <div class="dots-indicator">
+          <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+          <button class="dot" data-index="1" aria-label="Slide 2"></button>
+        </div>
+      </div>
+      </div>
+    </main>
+
+  <!-- Poems Section (White Background) -->
+  <section id="poems" class="poems-section">
+    <div class="container-narrow">
+      <h2 class="serif-heading section-title">Poems</h2>
+
+      <div class="poems-grid">
+        <!-- Left Column -->
+        <div class="poem-column">
+          <div class="poem-item">
+            <a href="doWeEver.html" class="poem-title">Do we ever?</a>
+            <span class="poem-date">July 14, 2026</span>
+          </div>
+          <div class="poem-item">
+            <a href="trustTheFearToFall.html" class="poem-title">Trust the Fear to Fall</a>
+            <span class="poem-date">July 30, 2026</span>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="poem-column">
+          <div class="poem-item">
+            <a href="Heart4Heart.html" class="poem-title">A heart for a heart - but you took two</a>
+            <span class="poem-date">August 22, 2026</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (Blue Background) -->
+<!-- About Section (Side-by-Side) -->
+  <section id="about" class="sky-section about-section">
+    <div class="container about-container">
+      <div class="about-text">
+        <h2 class="serif-heading">About</h2>
+        <p class="about-description">
+Late Night Thoughts is space for me to upload my heartfelt, unpolished poems— inspired by thoughts and moments I’m not brave enough to say aloud. You’re welcome to read slowly, return often, and find your own reflections between the lines.
+        </p>
+        <a href="about.html" class="btn btn-pill">Read more</a>
+      </div>
+
+      <div class="about-media">
+        <div class="image-wrapper">
+          <img 
+            src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1000&auto=format&fit=crop" 
+            alt="Open book, glasses, and a cup of coffee on sheets" 
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-Photo Collage Banner -->
+  <section class="photo-banner" aria-label="Photo gallery">
+    <div class="photo-item">
+      <img 
+        src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=800&auto=format&fit=crop" 
+        alt="Rainy European square with bicycle" 
+      />
+    </div>
+    <div class="photo-item">
+      <img 
+        src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop" 
+        alt="Moody dark red roses in rain" 
+      />
+    </div>
+    <div class="photo-item">
+      <img 
+        src="https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?q=80&w=800&auto=format&fit=crop" 
+        alt="Rain ripples and white petals on cobblestone" 
+      />
+    </div>
+    <div class="photo-item">
+      <img 
+        src="https://images.unsplash.com/photo-1520523839898-50712825e3a7?q=80&w=800&auto=format&fit=crop" 
+        alt="Vintage piano keys with dried flowers" 
+      />
+    </div>
+  </section>
+
+  <!-- Letters (Newsletter) Section -->
+  <section id="letters" class="letters-section">
+    <div class="container-center">
+      <h2 class="serif-heading center-heading">Letters</h2>
+      <p class="center-subtext">Occasional emails when new poems appear.</p>
+      
+      <form class="letters-form" onsubmit="event.preventDefault();">
+        <input 
+          type="email" 
+          placeholder="Type your email..." 
+          required 
+          class="text-input letters-input"
+        />
+        <button type="submit" class="btn btn-pill-outline">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Quiet Notes (Contact Form) Section -->
+  <section id="contact" class="notes-section">
+    <div class="container-center">
+      <h2 class="serif-heading center-heading">Quiet notes</h2>
+      <p class="center-subtext">
+        If a poem stays with you, you're welcome to send a quiet note; I read each message in my time.
+      </p>
+
+      <form class="notes-form" onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="text-input form-field" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="label-sub">(required)</span></label>
+          <input type="email" id="email" required class="text-input form-field" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" class="text-input form-field textarea-field"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-pill submit-btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Editorial Vibe Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Back to Top -->
+
+ <!-- Top Row: Brand & Return to Home Page -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-title serif-heading">Late Night Thoughts</span>
+          <p class="footer-quote"><em>“Words kept close, left softly by the window.”</em></p>
+        </div>
+
+        <!-- Changed link to return to the home page -->
+        <a href="index.html" class="return-link" aria-label="Return to home page">
+          <span class="arrow-left">&larr;</span>
+          <span>Return home</span>
+        </a>
+      </div>
+
+      <!-- Bottom Row: Navigation Links & Colophon / Copyright -->
+      <div class="footer-bottom">
+        <nav class="footer-nav">
+          <a href="archive.html">Archive</a>
+          <a href="#about">About</a>
+          <a href="#letters">Letters</a>
+          <a href="#contact">Quiet notes</a>
+
+        </nav>
+
+        <div class="footer-meta">
+          <span>&copy; <span id="year"></span> Late Night Thoughts. All rights reserved.</span>
+          <span class="meta-separator">&bull;</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  if (index >= slides.length) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = slides.length - 1;
+  } else {
+    currentIndex = index;
+  }
+
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === currentIndex);
+  });
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentIndex);
+  });
+}
+
+// Previous and Next button listeners
+prevBtn.addEventListener('click', () => {
+  showSlide(currentIndex - 1);
+});
+
+nextBtn.addEventListener('click', () => {
+  showSlide(currentIndex + 1);
+});
+
+// Dot click listeners
+dots.forEach((dot) => {
+  dot.addEventListener('click', (e) => {
+    const targetIndex = parseInt(e.target.dataset.index, 10);
+    showSlide(targetIndex);
+  });
+});
+// Dynamic Copyright Year
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
+
+// Smooth Back to Top
+const backToTopBtn = document.getElementById('backToTopBtn');
+if (backToTopBtn) {
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+  </script>
+</body>
+</html>
