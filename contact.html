@@ -18,7 +18,7 @@
     <nav class="nav-links">
       <a href="about.html" class="nav-link">About</a>
       <a href="contact.html" class="nav-link active-link">Contact</a>
-      <a href="index.html#poems" class="btn btn-pill">Archive</a>
+      <a href="archive.html" class="btn btn-pill">Archive</a>
     </nav>
   </header>
 
@@ -48,24 +48,24 @@
         </p>
 
         <div class="direct-contact-block">
-          <span class="meta-label">DIRECT INQUIRIES</span>
-          <a href="mailto:hello@latenightthoughts.com" class="direct-email-link">hello@latenightthoughts.com</a>
-        </div>
-
-        <div class="direct-contact-block">
           <span class="meta-label">DISPATCH SCHEDULE</span>
           <p class="direct-subtext">Replies are sent gently on Sunday evenings.</p>
         </div>
       </div>
 
-      <!-- Right Column: Clean Form -->
+      <!-- Right Column: Clean Form Connected to Email -->
       <div class="contact-form-col">
-        <form class="contact-page-form" onsubmit="event.preventDefault(); alert('Thank you for your note. It has been received gently.');">
+        <form 
+          class="contact-page-form" 
+          action="https://formspree.io/f/mbgdlygj" 
+          method="POST"
+        >
           <div class="form-group">
             <label for="contact-name">Your Name</label>
             <input 
               type="text" 
               id="contact-name" 
+              name="name" 
               class="text-input form-field" 
               placeholder="e.g. Julian" 
               required 
@@ -77,6 +77,7 @@
             <input 
               type="email" 
               id="contact-email" 
+              name="_replyto" 
               class="text-input form-field" 
               placeholder="you@domain.com" 
               required 
@@ -88,6 +89,7 @@
             <input 
               type="text" 
               id="contact-topic" 
+              name="topic" 
               class="text-input form-field" 
               placeholder="A favorite line, collaboration, or hello..." 
             />
@@ -97,6 +99,7 @@
             <label for="contact-message">Message</label>
             <textarea 
               id="contact-message" 
+              name="message" 
               rows="6" 
               class="text-input form-field textarea-field" 
               placeholder="Write your thoughts freely..."
@@ -133,7 +136,7 @@
       <!-- Bottom Row: Navigation Links & Copyright -->
       <div class="footer-bottom">
         <nav class="footer-nav">
-          <a href="index.html#poems">Archive</a>
+          <a href="archive.html">Archive</a>
           <a href="about.html">About</a>
           <a href="index.html#letters">Letters</a>
           <a href="contact.html">Quiet notes</a>
