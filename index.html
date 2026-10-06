@@ -15,23 +15,24 @@
   <!-- Top Blue Section: Header & Hero -->
   <div class="sky-section">
     <header class="header container">
-  <!-- Left Side -->
-  <a href="#" class="brand-name">Late Night Thoughts</a>
+      <!-- Left Side -->
+      <a href="#" class="brand-name">Late Night Thoughts</a>
 
-  <!-- Right Side -->
-  <nav class="nav-links">
-    <a href="about.html" class="nav-link">About</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <a href="archive.html" class="btn btn-pill">Archive</a>
-  </nav>
-</header>
+      <!-- Right Side -->
+      <nav class="nav-links">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="archive.html" class="btn btn-pill">Archive</a>
+      </nav>
+    </header>
 
-<main class="hero container">
+    <main class="hero container">
       <div class="hero-text">
         <h1 class="serif-heading">Do we ever?</h1>
         <a href="doWeEver.html" class="btn btn-pill">Begin reading</a>
       </div>
-<div class="hero-media">
+
+      <div class="hero-media">
         <div class="image-wrapper carousel-container">
           <!-- Slide 1 (active by default) -->
           <img 
@@ -45,12 +46,13 @@
             src="https://i.pinimg.com/736x/8f/e3/44/8fe344e8b264ae7681e6d91d8bb9bfa0.jpg" 
             alt="Two heart shapes drawn into the condensation on a window " 
           />
-
+          <!-- Slide 3 -->
           <img 
             class="slide"
             src="https://i.pinimg.com/736x/b4/52/8d/b4528da446a2e8dfed70299db1aa1f96.jpg" 
             alt="A dark silhouette of a cat looking at a full moon in a night sky." 
           />
+          <!-- Slide 4 -->
           <img 
             class="slide"
             src="https://i.pinimg.com/736x/29/6d/45/296d459ed8339bea8a1ac91f761f09cc.jpg" 
@@ -70,8 +72,8 @@
           <button class="dot" data-index="3" aria-label="Slide 4"></button>
         </div>
       </div>
-      </div>
     </main>
+  </div>
 
   <!-- Poems Section (White Background) -->
   <section id="poems" class="poems-section">
@@ -107,8 +109,7 @@
     </div>
   </section>
 
-  <!-- About Section (Blue Background) -->
-<!-- About Section (Side-by-Side) -->
+  <!-- About Section (Side-by-Side) -->
   <section id="about" class="sky-section about-section">
     <div class="container about-container">
       <div class="about-text">
@@ -164,9 +165,16 @@ Late Night Thoughts is space for me to upload my heartfelt, unpolished poems— 
       <h2 class="serif-heading center-heading">Letters</h2>
       <p class="center-subtext">Occasional emails when new poems appear.</p>
       
-      <form class="letters-form" onsubmit="event.preventDefault();">
+      <!-- Newsletter Form -->
+      <form 
+        class="letters-form" 
+        action="https://formspree.io/f/YOUR_NEWSLETTER_FORM_ID" 
+        method="POST"
+      >
+        <input type="hidden" name="source" value="Newsletter Subscription" />
         <input 
           type="email" 
+          name="email"
           placeholder="Type your email..." 
           required 
           class="text-input letters-input"
@@ -184,20 +192,28 @@ Late Night Thoughts is space for me to upload my heartfelt, unpolished poems— 
         If a poem stays with you, you're welcome to send a quiet note; I read each message in my time.
       </p>
 
-      <form class="notes-form" onsubmit="event.preventDefault();">
+      <!-- Connected to the same Notes Formspree -->
+      <form 
+        class="notes-form" 
+        action="https://formspree.io/f/mbgdlygj" 
+        method="POST"
+      >
+        <!-- Distinguishes homepage submissions from contact.html submissions -->
+        <input type="hidden" name="source" value="Homepage - Quiet Notes" />
+
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" class="text-input form-field" />
+          <input type="text" id="name" name="name" class="text-input form-field" required />
         </div>
 
         <div class="form-group">
           <label for="email">Email <span class="label-sub">(required)</span></label>
-          <input type="email" id="email" required class="text-input form-field" />
+          <input type="email" id="email" name="_replyto" required class="text-input form-field" />
         </div>
 
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" rows="5" class="text-input form-field textarea-field"></textarea>
+          <textarea id="message" name="message" rows="5" class="text-input form-field textarea-field" required></textarea>
         </div>
 
         <button type="submit" class="btn btn-pill submit-btn">Send</button>
@@ -205,34 +221,30 @@ Late Night Thoughts is space for me to upload my heartfelt, unpolished poems— 
     </div>
   </section>
 
-<!-- Editorial Vibe Footer -->
+  <!-- Editorial Footer -->
   <footer class="site-footer">
     <div class="container footer-container">
       
-      <!-- Top Row: Brand & Back to Top -->
-
- <!-- Top Row: Brand & Return to Home Page -->
+      <!-- Top Row: Brand & Return to Home Page -->
       <div class="footer-top">
         <div class="footer-brand">
           <span class="footer-title serif-heading">Late Night Thoughts</span>
           <p class="footer-quote"><em>“Words kept close, left softly by the window.”</em></p>
         </div>
 
-        <!-- Changed link to return to the home page -->
         <a href="index.html" class="return-link" aria-label="Return to home page">
           <span class="arrow-left">&larr;</span>
           <span>Return home</span>
         </a>
       </div>
 
-      <!-- Bottom Row: Navigation Links & Colophon / Copyright -->
+      <!-- Bottom Row: Navigation Links & Copyright -->
       <div class="footer-bottom">
         <nav class="footer-nav">
           <a href="archive.html">Archive</a>
-          <a href="#about">About</a>
+          <a href="about.html">About</a>
           <a href="#letters">Letters</a>
-          <a href="#contact">Quiet notes</a>
-
+          <a href="contact.html">Quiet notes</a>
         </nav>
 
         <div class="footer-meta">
@@ -244,65 +256,52 @@ Late Night Thoughts is space for me to upload my heartfelt, unpolished poems— 
     </div>
   </footer>
 
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
 
-<script>
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+    let currentIndex = 0;
 
-let currentIndex = 0;
+    function showSlide(index) {
+      if (index >= slides.length) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = slides.length - 1;
+      } else {
+        currentIndex = index;
+      }
 
-function showSlide(index) {
-  if (index >= slides.length) {
-    currentIndex = 0;
-  } else if (index < 0) {
-    currentIndex = slides.length - 1;
-  } else {
-    currentIndex = index;
-  }
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === currentIndex);
+      });
 
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === currentIndex);
-  });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
 
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === currentIndex);
-  });
-}
-
-// Previous and Next button listeners
-prevBtn.addEventListener('click', () => {
-  showSlide(currentIndex - 1);
-});
-
-nextBtn.addEventListener('click', () => {
-  showSlide(currentIndex + 1);
-});
-
-// Dot click listeners
-dots.forEach((dot) => {
-  dot.addEventListener('click', (e) => {
-    const targetIndex = parseInt(e.target.dataset.index, 10);
-    showSlide(targetIndex);
-  });
-});
-// Dynamic Copyright Year
-const yearSpan = document.getElementById('year');
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
-
-// Smooth Back to Top
-const backToTopBtn = document.getElementById('backToTopBtn');
-if (backToTopBtn) {
-  backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    prevBtn.addEventListener('click', () => {
+      showSlide(currentIndex - 1);
     });
-  });
-}
+
+    nextBtn.addEventListener('click', () => {
+      showSlide(currentIndex + 1);
+    });
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', (e) => {
+        const targetIndex = parseInt(e.target.dataset.index, 10);
+        showSlide(targetIndex);
+      });
+    });
+
+    // Dynamic Copyright Year
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
   </script>
 </body>
 </html>

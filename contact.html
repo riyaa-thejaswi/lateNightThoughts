@@ -53,13 +53,16 @@
         </div>
       </div>
 
-      <!-- Right Column: Clean Form Connected to Email -->
+      <!-- Right Column: Form Connected to Notes Formspree -->
       <div class="contact-form-col">
         <form 
           class="contact-page-form" 
           action="https://formspree.io/f/mbgdlygj" 
           method="POST"
         >
+          <!-- Hidden field identifying this message was sent from the Contact page -->
+          <input type="hidden" name="source" value="Contact Page" />
+
           <div class="form-group">
             <label for="contact-name">Your Name</label>
             <input 
