@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Figuring It Out — Late Night Thoughts</title>
+  <link rel="stylesheet" href="mystyle.css" />
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="poem-page">
+
+  <!-- Top Minimal Header -->
+  <header class="header container">
+    <a href="index.html" class="brand-name">Late Night Thoughts</a>
+    <nav class="nav-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="archive.html" class="btn btn-pill">Archive</a>
+    </nav>
+  </header>
+
+  <!-- Twilight / Amber Horizon Hero Banner -->
+  <section class="poem-hero twilight-hero">
+    <div class="hero-overlay"></div>
+    <div class="poem-hero-content">
+      <span class="category-tag">LATE NIGHT THOUGHTS</span>
+      <h1 class="poem-main-title">Figuring It Out</h1>
+      <p class="poem-summary">
+        A tender exploration of vertigo and quiet self-reckoning—caught between the gentle weight of someone else’s certainty and the trembling discovery of one’s own changing compass.
+      </p>
+    </div>
+  </section>
+
+  <!-- Centered Poem Body -->
+  <main class="poem-content-area">
+    <article class="poem-wrapper">
+      
+      <!-- Stanza 1 -->
+      <div class="stanza">
+        <p>Her winged-tipped eyes</p>
+        <p>sparkling in mine,</p>
+        <p>speaking a hundred words</p>
+        <p>I don't yet know how to read.</p>
+      </div>
+
+      <!-- Stanza 2 -->
+      <div class="stanza">
+        <p>Blonde-streaked hair</p>
+        <p>resting against my shoulder,</p>
+        <p>the soft weight of her sleep</p>
+        <p>while my own mind races.</p>
+      </div>
+
+      <!-- Stanza 3 -->
+      <div class="stanza">
+        <p>Naps on my sleeve,</p>
+        <p>shared Pinterest boards,</p>
+        <p>secret Insta stories</p>
+        <p>whispering her devotion.</p>
+      </div>
+
+      <!-- Subtle Blue Divider Line -->
+      <hr class="poem-divider-blue" />
+
+      <!-- Stanza 4 -->
+      <div class="stanza">
+        <p>But I am standing still,</p>
+        <p>questioning which way the compass turns—</p>
+        <p>unsure if my heart beats for boys,</p>
+        <p>or if it's learning to lean toward girls,</p>
+        <p>unsure if I could ever be the one for her.</p>
+      </div>
+
+      <!-- Stanza 5 -->
+      <div class="stanza">
+        <p>I trace the edges of my own reflection,</p>
+        <p>wondering when the rules changed,</p>
+        <p>or if I was just reading a language</p>
+        <p>I never learned to speak.</p>
+      </div>
+
+      <!-- Stanza 6 -->
+      <div class="stanza">
+        <p>It’s a strange kind of vertigo,</p>
+        <p>looking at a future I never pictured,</p>
+        <p>wondering if this sudden gravity</p>
+        <p>is a new truth, or just a passing storm.</p>
+      </div>
+
+      <!-- Subtle Blue Divider Line -->
+      <hr class="poem-divider-blue" />
+
+      <!-- Stanza 7 -->
+      <div class="stanza">
+        <p>She looks at me like home,</p>
+        <p>but I am still packing my bags,</p>
+        <p>standing on the porch of who I used to be,</p>
+        <p>looking out at a horizon I can't quite name.</p>
+      </div>
+
+      <!-- Stanza 8 -->
+      <div class="stanza">
+        <p>She deserves someone</p>
+        <p>who knows their heart's desires,</p>
+        <p>someone whose purpose</p>
+        <p>is a steady flame for hers.</p>
+      </div>
+
+      <!-- Stanza 9 -->
+      <div class="stanza">
+        <p>She deserves a hand</p>
+        <p>that never wavers in the dark,</p>
+        <p>a love she can fall onto</p>
+        <p>without a single doubt in the room.</p>
+      </div>
+
+      <!-- Poem Signoff / Attribution -->
+      <div class="poem-signoff">
+        WRITTEN IN THE DARK — R.
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Editorial Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Return Home -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-title serif-heading">Late Night Thoughts</span>
+          <p class="footer-quote"><em>“Words kept close, left softly by the window.”</em></p>
+        </div>
+
+        <a href="index.html" class="return-link" aria-label="Return home">
+          <span class="arrow-left">&larr;</span>
+          <span>Return home</span>
+        </a>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Row: Navigation Links & Copyright -->
+      <div class="footer-bottom">
+        <nav class="footer-nav">
+          <a href="archive.html">Archive</a>
+          <a href="about.html">About</a>
+          <a href="index.html#letters">Letters</a>
+          <a href="contact.html">Quiet notes</a>
+        </nav>
+
+        <div class="footer-meta">
+          <span>&copy; <span id="year"></span> Late Night Thoughts. All rights reserved.</span>
+          <span class="meta-separator">&bull;</span>
+          <span>Set in Cormorant Garamond &amp; Inter</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
